@@ -118,7 +118,7 @@
 
                 const startOrStop = ((innerText === lastText) || (innerText === currentText));
                 if (startOrStop) checked = !checked;
-                console.log({startOrStop, checked});
+                // console.log({startOrStop, checked});
                 if (checked) checkbox.checked = checked;
             });
         }
@@ -128,6 +128,8 @@
 
     // console.log(checkboxes);
     checkboxes.forEach(checkbox => checkbox.addEventListener('click',multipleSelector));
+    console.warn('%c Stop','font-size:3rem; color: red;');
+    console.warn('This is a developer feature, press F12 to exit');
 </script>
 </body>
 </html>
